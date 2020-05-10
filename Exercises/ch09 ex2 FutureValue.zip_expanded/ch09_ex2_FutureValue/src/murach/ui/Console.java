@@ -39,6 +39,7 @@ public class Console {
         while (true) {
             System.out.print(prompt);
             try {
+                //TEACHER NOTES: deleteCharAt() needs to be defined somewhere.
             	d.parseDouble(deleteCharAt(d) == %);
             	d.parseDouble(deleteCharAt(d) == $);
                 d = Double.parseDouble(sc.nextLine());
