@@ -37,6 +37,7 @@ public class ProductManagerFrame extends JFrame {
         setLocationByPlatform(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+	    //TEACHER NOTES: step 5 says to change this to SOUTH, not NORTH
         add(buildButtonPanel(), BorderLayout.NORTH);
         
         productTable = buildProductTable();
@@ -112,7 +113,7 @@ public class ProductManagerFrame extends JFrame {
             }
         }
     }
-    
+    //TEACHER NOTES: GOOD!!
     private void doPrintButton() {
     	  JFrame frame = new JFrame ("printer");
       	frame.setSize(600, 400);
