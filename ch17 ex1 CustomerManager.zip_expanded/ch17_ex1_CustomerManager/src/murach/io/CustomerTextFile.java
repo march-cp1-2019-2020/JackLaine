@@ -40,6 +40,7 @@ public class CustomerTextFile {
         	c.setCode(code);
         	c.setDescription(description);
         	c.setPrice(Double.parseDouble(price));
+            //TEACHER NOTES: this next line should be customers.add(c)
         	Customer.add(c);
         }
         
@@ -82,9 +83,10 @@ public class CustomerTextFile {
 
     private static boolean saveCustomers() {
     	fileWriter(customers.txt){
-    		
+    	//TEACHER NOTES: you must get each attribute of the Customer class as a string and then print it one at a time to the file.
     	out.print(get.customers); 
         return true;
+        //TEACHER NOTES: a try/catch block must go around the code not after it.
         try {
     } catch (IOException e) {
     System.out.println("error occured");
